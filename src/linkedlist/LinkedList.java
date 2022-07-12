@@ -28,6 +28,17 @@ public class LinkedList {
 			}
 			return head;
 		}
+		  public Node addNodeAtFirst(Node head, int data) {
+		        Node newNode = new Node(data);
+		        if(head == null) {
+		            head = newNode;
+		        }
+		        else {
+		            newNode.next = head;
+		            head = newNode;
+		        }
+		        return head;
+		  }
 		
 		public void printLinkedList(Node head) {
 			/**
