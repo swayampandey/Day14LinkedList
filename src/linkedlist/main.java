@@ -11,9 +11,9 @@ public class main {
 
 		LinkedList list = new LinkedList();
 		/**
-		 * node with data 70 first created
-		 * next 30 is added to 70
-		 * finally 56 is added to 70
+		 * node with data 56 first created
+		 * next 30 is appended to 56
+		 * finally 70 is appended to 56
 		 */
 		Node head = list.addNode(null, 70);
 		
