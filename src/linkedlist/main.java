@@ -5,14 +5,20 @@ public class main {
 	public static void main(String[] args) {
 		/**
 		 * creating object of linkedList class
-		 * added values through add method
+		 * 
 		 * 
 		 */
 
 		LinkedList list = new LinkedList();
-		Node head = list.addNode(null, 56);
-		list.addNode(head, 30);
-		list.addNode(head, 70);
+		/**
+		 * node with data 70 first created
+		 * next 30 is added to 70
+		 * finally 56 is added to 70
+		 */
+		Node head = list.addNode(null, 70);
+		
+		head = list.addNodeAtFirst(head, 30);
+		head = list.addNodeAtFirst(head, 56);
 		list.printLinkedList(head);
 
 	}
